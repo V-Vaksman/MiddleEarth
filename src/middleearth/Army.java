@@ -1,8 +1,9 @@
 package middleearth;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Army {
+public class Army implements Serializable {
     public ArrayList<MiddleEarthCitizen> infantry;
     public ArrayList<MiddleEarthCitizen> cavalry;
 
@@ -12,14 +13,18 @@ public class Army {
     }
 
     public void Print(){
-
-        System.out.println("Кавалерия:");
-        for (MiddleEarthCitizen warrior : cavalry) {
-            System.out.println(warrior.toString());
+        if (cavalry.size() > 0) {
+            System.out.println("Кавалерия:");
+            for (MiddleEarthCitizen warrior : cavalry) {
+                System.out.println(warrior.toString());
+            }
+            System.out.println();
         }
-        System.out.println("\nПехота:");
-        for (MiddleEarthCitizen warrior : infantry) {
-            System.out.println(warrior.toString());
+        if (infantry.size() > 0) {
+            System.out.println("Пехота:");
+            for (MiddleEarthCitizen warrior : infantry) {
+                System.out.println(warrior.toString());
+            }
         }
     }
 }

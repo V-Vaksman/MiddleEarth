@@ -1,3 +1,7 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -6,13 +10,46 @@ import middleearth.*;
 
 public class Main {
 
+    public static String filename = "winners.out";
+
     public static int RandBetween(int min, int max) // Генерация случайного целого числа от min до max
     {
         Random r = new Random();
         return min + r.nextInt(max - min + 1);
     }
 
+    public static void WriteToFile(Army army, String filename)
+    {
+        try {
+            FileOutputStream fos = new FileOutputStream(filename);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(army);
+            oos.flush();
+            oos.close();
+            fos.close();
+            System.out.println("\nПредания о победившей армии сохранены в файл " + filename);
+        }
+        catch (Exception e)
+        {
+            System.out.println("\nОшибка: " + e.getMessage());
+        }
+    }
+
+    public static void ReadFromFile(String filename){
+
+        try {
+            FileInputStream fis = new FileInputStream(filename);
+            ObjectInputStream oin = new ObjectInputStream(fis);
+            Army army = (Army) oin.readObject();
+            System.out.println("Сохранились сведения о Предпоследней битве Средиземья!\nВот имена героев:");
+            army.Print();
+        }
+        catch (Exception e) {}
+    }
+
     public static void main(String[] args) {
+
+        ReadFromFile(filename);
         // Размеры армий генерируются в этих пределах
         final int maxCount = 12;
         final int minCount = 8;
@@ -25,7 +62,7 @@ public class Main {
         int lightCount = RandBetween(minCount,maxCount);
         int darkCount = RandBetween(minCount,maxCount);
 
-        System.out.println("И началась последняя битва Средиземья");
+        System.out.println("И началась Последняя битва Средиземья!");
 
         // Случайное добавление чародея
         if (r.nextBoolean()) {
@@ -99,6 +136,12 @@ public class Main {
                 System.out.println("\nСветлая армия в решающей схватке одержала верх! "+(Light.cavalry.size()+Light.infantry.size())+" выживших");
             else System.out.println("\nТемная армия в решающей схватке одержала верх! "+(Dark.cavalry.size()+Dark.infantry.size())+" выживших");
         }
+
+        // Вывод победителя в файл
+        if (Light.infantry.size() > 0 || Light.cavalry.size() > 0)
+            WriteToFile(Light, filename);
+        else
+            WriteToFile(Dark, filename);
     }
 
     // в Round, Duel и Punch - "первый" и "второй" не связаны, это локальные обозначения
