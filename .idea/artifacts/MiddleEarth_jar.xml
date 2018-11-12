@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MiddleEarth:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MiddleEarth_jar</output-path>
+    <root id="archive" name="MiddleEarth.jar">
+      <element id="module-output" name="MiddleEarth" />
+    </root>
+  </artifact>
+</component>

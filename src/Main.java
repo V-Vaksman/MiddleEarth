@@ -5,6 +5,8 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
+
 import middleearth.*;
 //import static middleearth.MiddleEarthCitizen.getCountryOrigin;
 
@@ -142,6 +144,8 @@ public class Main {
             WriteToFile(Light, filename);
         else
             WriteToFile(Dark, filename);
+
+        //java -jar C:\Users\user\jar_name.jar
     }
 
     // в Round, Duel и Punch - "первый" и "второй" не связаны, это локальные обозначения

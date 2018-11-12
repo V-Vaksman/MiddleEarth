@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MiddleEarth:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="461f0428-85d8-4a0c-b654-c4befaa92bb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Army.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Army.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Elf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Elf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Goblin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Goblin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Human.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Orc$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Orc$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Orc$Wolf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Orc$Wolf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Orc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Orc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Rohirrim$Horse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Rohirrim$Horse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Rohirrim.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Rohirrim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Troll.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Troll.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/UrukHai.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/UrukHai.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Wizard$Horse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/Wizard$Horse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/WoodenElf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MiddleEarth/middleearth/WoodenElf.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/Army.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/Army.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/Elf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/Elf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/Goblin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/MiddleEarthCitizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/MiddleEarthCitizen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/Orc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/Orc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/Rohirrim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/Rohirrim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/Troll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/Troll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/UrukHai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/UrukHai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleearth/WoodenElf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleearth/WoodenElf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/winners.out" beforeDir="false" afterPath="$PROJECT_DIR$/winners.out" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -110,12 +89,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3792" />
+          <entry key="java" value="3843" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3792" />
+          <entry key="JAVA" value="3843" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -135,12 +114,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="270">
+              <caret line="147" column="46" selection-start-line="147" selection-start-column="46" selection-end-line="147" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#RandBetween#0;class#Main#0" />
-                <element signature="method#WriteToFile#0;class#Main#0" />
                 <element signature="method#ReadFromFile#0;class#Main#0" />
                 <element signature="method#Duel#0;class#Main#0" />
                 <element signature="method#Punch#0;class#Main#0" />
@@ -179,13 +157,13 @@
         <option value="$PROJECT_DIR$/src/middleearth/Elf.java" />
         <option value="$PROJECT_DIR$/src/middleearth/Army.java" />
         <option value="$PROJECT_DIR$/src/middleearth/WoodenElf.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/middleearth/UrukHai.java" />
         <option value="$PROJECT_DIR$/src/middleearth/Orc.java" />
         <option value="$PROJECT_DIR$/src/middleearth/Human.java" />
         <option value="$PROJECT_DIR$/src/middleearth/Rohirrim.java" />
         <option value="$PROJECT_DIR$/src/middleearth/MiddleEarthCitizen.java" />
         <option value="$PROJECT_DIR$/src/middleearth/Wizard.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -236,9 +214,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542021645044" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542027437578" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -286,15 +264,16 @@
       <workItem from="1540477044960" duration="3211000" />
       <workItem from="1541849658825" duration="27278000" />
       <workItem from="1541997207548" duration="663000" />
-      <workItem from="1541998968268" duration="16201000" />
+      <workItem from="1541998968268" duration="18682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53074000" />
+    <option name="totallyTimeSpent" value="55555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -423,12 +402,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="270">
+          <caret line="147" column="46" selection-start-line="147" selection-start-column="46" selection-end-line="147" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#RandBetween#0;class#Main#0" />
-            <element signature="method#WriteToFile#0;class#Main#0" />
             <element signature="method#ReadFromFile#0;class#Main#0" />
             <element signature="method#Duel#0;class#Main#0" />
             <element signature="method#Punch#0;class#Main#0" />
@@ -442,10 +420,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>MiddleEarth:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
