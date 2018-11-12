@@ -8,9 +8,7 @@ public class Wizard extends MiddleEarthCitizen {
 
     public Wizard(){
         Horse horse = new Horse();
-        Random r = new Random();
-        int randPower = minPower + r.nextInt(maxPower - minPower + 1);
-        setPower(randPower + horse.hp);
+        setPower(PowerCalc(minPower,maxPower) + horse.hp);
         setRace("Чародей");
     }
 
@@ -20,26 +18,10 @@ public class Wizard extends MiddleEarthCitizen {
 
         private int hp;
 
-        /*
-        private String color;
-        private String breed;
-
-        public String getBreed() { return breed; }
-        public String getColor() { return color; }
-
-        public void setBreed(String breed) { this.breed = breed; }
-        public void setColor(String color) { this.color = color; }
-
-        public Horse(String color, String breed) {
-            this.color = color;
-            this.breed = breed;
-        }
-
-        public Rohhirim getOwner()
+        public Wizard getOwner()
         {
-            return Rohhirim.this;
+            return Wizard.this;
         }
-        */
 
         private Horse() {
             Random r = new Random();

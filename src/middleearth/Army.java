@@ -25,6 +25,7 @@ public class Army implements Serializable {
             for (MiddleEarthCitizen warrior : infantry) {
                 System.out.println(warrior.toString());
             }
+            System.out.println();
         }
     }
 }

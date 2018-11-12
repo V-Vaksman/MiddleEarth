@@ -1,34 +1,37 @@
 package middleearth;
 
+import java.util.Random;
+
 public class Human extends MiddleEarthCitizen {
-    /*
-    private String homeTown;
-    private int age;
 
-    public Human() {}
-
-    public String getHomeTown() { return homeTown; }
-    public void setHomeTown(String val) { homeTown = val; }
-    public int getAge() { return age; }
-    public void setAge(int val) { age = val; }
-
-    public Human(String homeTown, int age, String name, double height) {
-        super(name, height);
-        this.homeTown = homeTown;
-        this.age = age;
-    }
+    protected int age;
 
     @Override
     public String toString() {
-        return "Человек. Имя: "+ getName() +", рост: " + getHeight() + " см, город: " + getHomeTown() + ", возраст: " + getAge();
+        String str;
+        switch (age % 10){
+            case 1:
+                str = "год";
+                break;
+            case 2:
+            case 3:
+            case 4:
+                str = "года";
+                break;
+            default:
+                str = "лет";
+                break;
+        }
+        return "Человек, " + age + " " + str + " от роду, сила: " + getPower();
     }
-    */
 
     protected static final int minPower = 7;
     protected static final int maxPower = 8;
 
     public Human(){
+        Random r = new Random();
         setPower(PowerCalc(minPower,maxPower));
         setRace("Человек");
+        age = 18 + r.nextInt(33);
     }
 }

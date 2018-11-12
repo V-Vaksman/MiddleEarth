@@ -1,7 +1,9 @@
 package middleearth;
 
+import java.util.Random;
+
 public class Troll extends MiddleEarthCitizen {
-    /*
+
     enum Type{
         STONE,
         CAVE,
@@ -11,20 +13,46 @@ public class Troll extends MiddleEarthCitizen {
 
     private Type type;
 
-    public Type getType() { return type; }
-    public void setType(Type type) { this.type = type; }
-
-    public Troll() {}
-
-    public Troll(String name, double height, Type type) {
-        super(name, height); this.type = type;
-    }*/
-
     private static final int minPower = 11;
     private static final int maxPower = 15;
 
-    public Troll(){
-        setPower(PowerCalc(minPower,maxPower));
+    @Override
+    public String toString() {
+        String str = "";
+        switch (type) {
+            case STONE:
+                str += "Каменный";
+                break;
+            case CAVE:
+                str += "Пещерный";
+                break;
+            case HILL:
+                str += "Холмовой";
+                break;
+            case SNOW:
+                str += "Снежный";
+                break;
+        }
+        return str + " тролль" + ", сила: " + getPower();
+    }
+
+    public Troll() {
+        Random r = new Random();
+        setPower(PowerCalc(minPower, maxPower));
         setRace("Тролль");
+        switch (r.nextInt(4)) {
+            case 0:
+                type = Type.STONE;
+                break;
+            case 1:
+                type = Type.CAVE;
+                break;
+            case 2:
+                type = Type.HILL;
+                break;
+            case 3:
+                type = Type.SNOW;
+                break;
+        }
     }
 }

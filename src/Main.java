@@ -112,12 +112,12 @@ public class Main {
         System.out.println("\n*** ТЕМНАЯ АРМИЯ ("+(Dark.cavalry.size()+Dark.infantry.size())+") ***");
         Dark.Print();
 
-        System.out.println("\nРаунд 1 - всадники");
+        System.out.println("\n*** Раунд 1 - всадники ***");
         if (Light.cavalry.size()>0 && Dark.cavalry.size()>0)
             Round(Light.cavalry, Dark.cavalry, false); // Всадники сражаются со всадниками
         else System.out.println("\nРаунд не состоялся");
 
-        System.out.println("\nРаунд 2 - пехота");
+        System.out.println("\n*** Раунд 2 - пехота ***");
         if (Light.infantry.size()>0 && Dark.infantry.size()>0)
             Round(Light.infantry, Dark.infantry, false); // Пехотинцы сражаются с пехотинцами
         else System.out.println("\nРаунд не состоялся");
@@ -127,14 +127,14 @@ public class Main {
         else if (Dark.cavalry.size()>0 && Dark.infantry.size()>0)
             System.out.println("\nПобедила темная армия! "+(Dark.cavalry.size()+Dark.infantry.size())+" выживших");
         else {
-            System.out.println("\nРаунд 3 - решающий бой");
+            System.out.println("\n*** Раунд 3 - решающий бой ***");
             if (Light.cavalry.size()>0)
                 Round(Light.cavalry, Dark.infantry, true); // Выжившие всадники сражаются с выжившими пехотинцами
             else
                 Round(Dark.cavalry, Light.infantry,true);
             if (Light.infantry.size()>0 || Light.cavalry.size()>0)
-                System.out.println("\nСветлая армия в решающей схватке одержала верх! "+(Light.cavalry.size()+Light.infantry.size())+" выживших");
-            else System.out.println("\nТемная армия в решающей схватке одержала верх! "+(Dark.cavalry.size()+Dark.infantry.size())+" выживших");
+                System.out.println("\nСветлая армия в решающей схватке одержала верх! Выживших: "+(Light.cavalry.size()+Light.infantry.size()));
+            else System.out.println("\nТемная армия в решающей схватке одержала верх! Выживших: "+(Dark.cavalry.size()+Dark.infantry.size()));
         }
 
         // Вывод победителя в файл
